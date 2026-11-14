@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Artefactos de ejecución
+plan.json
+traces/
+inventario.json
+*.log
+
+# Cuarentenas (nunca subir archivos del juego)
+iwslim_quarantine_*/
+*_cuarentena/
+manifest.json
+restore.py
+
+# Sistema
+.DS_Store
+Thumbs.db
+*~
+*.bak
+*.tmp

@@ -1,0 +1,47 @@
+{
+  "id": "zombies",
+  "title": "Zombies (mapa base + 4 DLC)",
+  "status": "validated",
+  "validated_on": "2026-11-14",
+  "validated_on_build": "iw7-mod v1.0.2-144-g78d1a0a",
+  "validated_maps": ["cp_zmb", "cp_rave", "cp_disco", "cp_final", "cp_town"],
+  "requires": {
+    "language": "distinto de inglés (probado con español)",
+    "note": "Con el idioma en inglés la carpeta english/ SÍ se usa. Usa --keep-english en ese caso."
+  },
+  "protected_globs": [
+    "*.exe",
+    "*.dll",
+    "*.bat",
+    "*.sh",
+    "*.pid",
+    "*.vdf",
+    "*.url",
+    "*.txt",
+    "*.md",
+    "*.json",
+    "iw7-mod",
+    "iw7-mod/**",
+    "spanish",
+    "spanish/**",
+    "english",
+    "main"
+  ],
+  "remove_dirs": ["english"],
+  "remove_lists": [
+    "remove-root.txt",
+    "remove-videos.txt",
+    "remove-paks.txt"
+  ],
+  "keep_lists": [
+    "keep-shared.txt",
+    "keep-paks.txt"
+  ],
+  "notes": [
+    "La carpeta english/ se vacía pero NUNCA se borra: sin ella el juego se queda colgado al arrancar.",
+    "No borrar mp_weapon_*, mp_head_*, mp_body_*, mp_viewhands_*, mp_fullbody* ni livery_*: los usan los zombies.",
+    "No borrar assetfile21.pak: lo pide la precarga de caches (se descubrió jugando).",
+    "Los .bik sysload_*/sysmain* y los zombies_* se conservan.",
+    "Los techsets_* se conservan: son pequeños y los usa la precarga."
+  ]
+}

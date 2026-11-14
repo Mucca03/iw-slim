@@ -1,0 +1,36 @@
+{
+  "id": "campaign",
+  "title": "Campaña (plantilla, sin validar)",
+  "status": "template",
+  "validated_on": null,
+  "requires": {
+    "language": "cualquiera",
+    "note": "Plantilla vacía a propósito: la campaña necesita sus zonas, vídeos y partidas guardadas."
+  },
+  "protected_globs": [
+    "*.exe",
+    "*.dll",
+    "*.bat",
+    "*.sh",
+    "*.pid",
+    "*.vdf",
+    "*.url",
+    "*.txt",
+    "*.md",
+    "*.json",
+    "iw7-mod",
+    "iw7-mod/**",
+    "spanish",
+    "spanish/**",
+    "english",
+    "main"
+  ],
+  "remove_dirs": [],
+  "remove_lists": [],
+  "keep_lists": [],
+  "notes": [
+    "Sigue docs/MP-CP-GUIDE.md: traza cada misión con +map <nivel> antes de borrar nada.",
+    "No borres common_sp, techsets_common_sp ni los vídeos de la campaña.",
+    "Haz copia de players2/ si quieres conservar progreso y guardados."
+  ]
+}

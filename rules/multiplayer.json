@@ -1,0 +1,36 @@
+{
+  "id": "multiplayer",
+  "title": "Multijugador (plantilla, sin validar)",
+  "status": "template",
+  "validated_on": null,
+  "requires": {
+    "language": "cualquiera",
+    "note": "Plantilla vacía a propósito: no recorta nada hasta que generes y valides tus propias listas."
+  },
+  "protected_globs": [
+    "*.exe",
+    "*.dll",
+    "*.bat",
+    "*.sh",
+    "*.pid",
+    "*.vdf",
+    "*.url",
+    "*.txt",
+    "*.md",
+    "*.json",
+    "iw7-mod",
+    "iw7-mod/**",
+    "spanish",
+    "spanish/**",
+    "english",
+    "main"
+  ],
+  "remove_dirs": [],
+  "remove_lists": [],
+  "keep_lists": [],
+  "notes": [
+    "Sigue docs/MP-CP-GUIDE.md para generar las listas con trazas.",
+    "Conserva common_mp, global_mp, common_core_mp, mp_frontend, patch_* y los techsets.",
+    "No borres mp_weapon_*/mp_head_*/mp_body_*/mp_viewhands_* si quieres jugar con bots o personalización."
+  ]
+}
